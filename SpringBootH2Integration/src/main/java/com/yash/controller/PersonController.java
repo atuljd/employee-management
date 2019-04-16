@@ -19,7 +19,7 @@ public class PersonController {
     @Autowired
     PersonService personService;
     
-
+// Get the list of person
     @GetMapping("/persons")
     private List<Person> getAllPersons() {
         return personService.getAllPersons();
