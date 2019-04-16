@@ -24,7 +24,7 @@ public class PersonController {
     private List<Person> getAllPersons() {
         return personService.getAllPersons();
     }
-
+// Get the person based on specific id
     @GetMapping("/persons/{id}")
     private Person getPerson(@PathVariable("id") int id) {
         return personService.getPersonById(id);
